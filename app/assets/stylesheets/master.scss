@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+
 @import "bootstrap";
 
 .clear {
@@ -43,4 +47,14 @@ header {
 }
 hr {
     clear:both;
+}
+h1 {
+    font-family: "Karla", sans-serif;
+    font-weight: 600;
+    letter-spacing: -1.5px;
+}
+h2 {
+    font-family: "Karla", sans-serif;
+    font-weight: 600;
+    letter-spacing: -1.5px;
 }
