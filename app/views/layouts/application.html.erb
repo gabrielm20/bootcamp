@@ -3,7 +3,7 @@
   <head>
     <title>Splurty</title>
     <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    'master', 'application', media: 'all', 'data-turbolinks-track': 'reload'%>
+    <%= stylesheet_link_tag    'footers', 'master', 'application', media: 'all', 'data-turbolinks-track': 'reload'%>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
@@ -34,7 +34,22 @@
 
     <br class="clear" />
 
-    
+  <div class="container">
     <%= yield %>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %>
+        </div>
+        <div class="col-6 footer-blurb">
+          Proudly created by <a href="https://gabrielmaestas.netlify.com">[Gabriel Maestas]</a><br />Want to build your own splurty Web App - <a href="https://online.bootcampspot.com">Learn how to code here</a>
+      </div>
+    </div>
+  </div>
+
+
   </body>
 </html>
