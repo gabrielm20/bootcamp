@@ -13,24 +13,23 @@
         <%= link_to root_path, class: 'logo' do%>
           <div class="circle">
             <br />
-            You know
+            Advice from
 
             <br />
-            you need
+            the wisest
 
             <br />
-            to code
+            of time
           </div>
         <% end %>
       </div>
-      <div class="col-4 slogan">
-        Splurting out unsolicited advice about entrepreneurship since 2019
+      <div class="col col-sm-4 h idden-xs-down slogan">
+        Splurting out free wisdom from 10,000 BC. to 2019 AD.
       </div>
-
-
-      <div class="col-5 links">
+      <div class="co-10 offset-1 offset-sm-0 col-sm-5 links">
                 <!-- Button trigger modal -->
         <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
+        &nbsp;&nbsp;
         <%= link_to 'About', about_path %>
       </div>
     </header>
@@ -47,8 +46,9 @@
           </div>
           <%= simple_form_for Quote.new do |f| %>
             <div class="modal-body">
-                <%= f.input :saying %>
-                <%= f.input :author %>
+                <%= f.input :saying, label: "Enlighten us with your wisdom.", placeholder: "Tis but a scratch." %>
+                <br />
+                <%= f.input :author, label: "Claim the wisdoms origins.", placeholder: "The Black Knight" %>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -75,10 +75,10 @@
   <div class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-6">
+        <div class="col-12 col-sm-6">
           <%= link_to "This isn't enough, I need more", root_path, class: 'next-quote' %>
         </div>
-        <div class="col-6 footer-blurb">
+        <div class="col-12 col-sm-6 footer-blurb">
           Proudly created by <a href="https://gabrielmaestas.netlify.com">[Gabriel Maestas]</a><br />Want to build your own splurty Web App - <a href="https://online.bootcampspot.com">Learn how to code here</a>
       </div>
     </div>
